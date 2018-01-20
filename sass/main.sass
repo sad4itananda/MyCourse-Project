@@ -1,0 +1,121 @@
+
+@mixin box-size($width, $height, $backgroundcolor)
+    width: $width
+    height: $height
+    background: $backgroundcolor
+    margin: 0 auto
+
+@mixin sub-boxes-size($width, $height)
+    width: $width
+    height: $height
+      
+$padding-top: 30px    
+
+.container
+    display: block  
+/*--------------main-blocks-of-site------------*/
+.container
+    @include box-size(92%, 100%, transparent) 
+.header
+    @include box-size(100%, 93px, #303441) 
+.header-botline 
+    @include box-size(100%, 7px, #373b4a)     
+.slider
+    @include box-size(100%, 593px, #eb5055)
+.slider-botline
+    @include box-size(100%, 7px, #ea676b)      
+.our-services
+    @include box-size(100%, 493px, #f2f2f2) 
+.our-services-botline 
+    @include box-size(100%, 7px, #ffffff)   
+.portfolio
+    @include box-size(100%, 863px, #303441) 
+.portfolio-botline
+    @include box-size(100%, 7px, #373b4a)   
+.about-us
+    @include box-size(100%, 723px, #f2f2f2)
+.about-us-botline
+    @include box-size(100%, 7px, #ffffff)    
+.get-a-quote
+    @include box-size(100%, 643px, #eb5055) 
+.get-a-quote-botline 
+    @include box-size(100%, 7px, #ea676b)   
+footer
+    @include box-size(100%, 90px, #303441) 
+/*--------------header------------------------*/
+.padding-top-menu 
+	padding-top: $padding-top+ 10px
+.padding-top-logo
+	padding-top: $padding-top+ 5px
+.zoom	
+	zoom: 0.8
+
+/*--------------our-services------------------*/
+
+.our-services-caption
+    @include box-size(100%, 40%, transparent)  
+
+.our-services-description
+    @include box-size(100%, 60%, transparent)
+.our-services-description-top
+    @include box-size(100%, 50%, transparent)
+.our-services-description-bot
+    @include box-size(100%, 50%, transparent)
+
+.our-services-description-top div:nth-child(1)
+    @include sub-boxes-size(33.33%, 100%)
+.our-services-description-top div:nth-child(2)
+    @include sub-boxes-size(33.33%, 100%)
+.our-services-description-top div:nth-child(3)
+    @include sub-boxes-size(33.33%, 100%)
+
+.our-services-description-bot
+    @include box-size(100%, 50%, transparent)
+.our-services-description-bot div:nth-child(1)
+    @include sub-boxes-size(33.33%, 100%)
+.our-services-description-bot div:nth-child(2)
+    @include sub-boxes-size(33.33%, 100%)
+.our-services-description-bot div:nth-child(3)
+    @include sub-boxes-size(33.33%, 100%)
+
+/*--------------about-us--------------------*/
+   
+.about-us-caption
+    @include box-size(100%, 30%, transparent)
+
+.about-us-description    
+    @include box-size(100%, 70%, transparent)
+
+.about-us-description div:nth-child(1)
+    @include sub-boxes-size(27%, 100%)
+    div:nth-child(1)
+        @include box-size(100%, 60%, transparent)
+    div:nth-child(2)
+        @include box-size(100%, 20%, transparent) 
+    div:nth-child(3)
+        @include box-size(100%, 20%, transparent) 
+
+.about-us-description div:nth-child(2)
+    @include sub-boxes-size(27%, 100%)
+    div:nth-child(1)
+        @include box-size(100%, 60%, transparent)
+    div:nth-child(2)
+        @include box-size(100%, 20%, transparent) 
+    div:nth-child(3)
+        @include box-size(100%, 20%, transparent)
+
+.about-us-description div:nth-child(3)
+    @include sub-boxes-size(27%, 100%)
+    div:nth-child(1)
+        @include box-size(100%, 60%, transparent)
+    div:nth-child(2)
+        @include box-size(100%, 20%, transparent) 
+    div:nth-child(3)
+        @include box-size(100%, 20%, transparent)            
+/*--------------get-a-quote------------------*/
+.get-a-quote-caption
+    @include box-size(100%, 40%, transparent) 
+.get-a-quote-form
+    @include box-size(60%, 60%, transparent)
+.get-a-quote-contact    
+    @include box-size(40%, 60%, transparent)
